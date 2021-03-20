@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct PurchaseItemView: View {
-    let imageString: String
-    let imageColor: Color
-    let title: String
-    let description: String
-    let price: String
-    var useSystemName: Bool = true
+public struct PurchaseItemView: View {
+    public let imageString: String
+    public let imageColor: Color
+    public let title: String
+    public let description: String
+    public let price: String
+    public var useSystemName: Bool = true
     
-    var body: some View {
+    public var body: some View {
         HStack {
             (useSystemName ? Image(systemName: imageString) : Image(imageString))
                 .resizable()

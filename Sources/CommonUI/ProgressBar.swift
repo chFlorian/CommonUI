@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ProgressBar: View {
-    let progress: CGFloat
-    let primaryColor: Color
-    let secondaryColor: Color
+public struct ProgressBar: View {
+    public let progress: CGFloat
+    public let primaryColor: Color
+    public let secondaryColor: Color
     
-    var body: some View {
+    public var body: some View {
         GeometryReader { geometry in
             RoundedRectangle(cornerRadius: 5)
                 .fill(secondaryColor)
